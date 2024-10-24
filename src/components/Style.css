@@ -1,0 +1,31 @@
+/* 
+.gradient-text {
+    font-weight: 700;
+    background: linear-gradient(90deg, #8e1696,#8eb9ff,#7caeff,#b2cffe,#7fb0ff,#488eff,#3884ff, #f172c4, #8e1696);
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 10s infinite;
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+
+  .img{
+    background-image: url('../img/image.png');
+    background-position: right;
+  }
+  h2{
+    padding: 29px;
+    background: #bdbdbd;
+    border-radius: 20px;
+  } */
