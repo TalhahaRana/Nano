@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import logo from '../img/logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Style.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <nav className="navbar navbar-expand-lg px-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" width="130" className="d-inline-block align-text-top" />

@@ -19,4 +19,7 @@
     font-size: 2.5rem;
     color: #343a40; /* Dark color for the header */
   }
-  
+  .heroo{
+    background-color: #4c1e51;
+    height: 50vh !important;
+  }
