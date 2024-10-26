@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';
+import cart from '../img/cart.gif';
 
 function Cart() {
   const { cartItems, removeFromCart, clearCart } = useContext(CartContext);
@@ -23,11 +24,14 @@ function Cart() {
     <div className="container">
       <h1>Shopping Cart</h1>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <div className="text-center">
+          <p>Your cart is empty.</p>
+          <img src={cart} alt="Empty Cart" style={{ width: '200px', height: '200px' }} />
+        </div>
       ) : (
         <div>
           <ul className="list-group mb-3">
-            {cartItems.map(item => (
+            {cartItems.map((item) => (
               <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
                 <div>
                   <h5>{item.name}</h5>
@@ -35,14 +39,14 @@ function Cart() {
                   <p>Price: ${item.price}</p>
                 </div>
                 <div>
-                  <button className="btn btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
-                  <button className="btn btn-success ms-2" onClick={() => handleConfirmOrder(item)}>Confirm Order</button>
+                  <button className="btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
+                  <button className="btn-success ms-2" onClick={() => handleConfirmOrder(item)}>Confirm</button>
                 </div>
               </li>
             ))}
           </ul>
           <h4>Total: ${getTotalPrice()}</h4>
-          <button className="btn btn-danger" onClick={clearCart}>Clear Cart</button>
+          <button className="btn" onClick={clearCart}>Clear Cart</button>
         </div>
       )}
     </div>
