@@ -24,6 +24,9 @@
     background-image: url('../img/image.png');
     background-position: right;
   } */
+   .main{
+    background: #000000c7;
+   }
   .bg-ex{
     padding: 29px;
     background: #4c1e5173;
@@ -35,7 +38,7 @@
     height: 100vh;
   }
   .he{
-    margin-top: 22vh; }
+    padding-top: 30vh; }
   .btn{
     background: #a077ff;
     background: -moz-linear-gradient(top, #a077ff 0%, #ef67ff 100%);
@@ -46,7 +49,7 @@
     width: 225px;
   }
   .con{
-    border: 2px solid #ff4a6a;
+    border: 2px solid #9c42a5;
     padding: 22px;
     border-radius: 30px;
   }
