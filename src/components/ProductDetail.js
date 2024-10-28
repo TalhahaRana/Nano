@@ -32,7 +32,7 @@ function ProductDetail() {
   };
 
   return (
-    <div className="container">
+    <div className="container p-5">
       {product ? (
         <div className="row">
           <div className="col-md-6">

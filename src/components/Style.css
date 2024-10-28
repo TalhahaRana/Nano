@@ -24,7 +24,7 @@
     background-image: url('../img/image.png');
     background-position: right;
   } */
-   .main{
+   .mainn{
     background: #000000c7;
    }
   .bg-ex{
@@ -35,7 +35,8 @@
   }
   .hero{
     background-color: #4c1e51;
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 95px;
   }
   .he{
     padding-top: 30vh; }
@@ -57,7 +58,17 @@
     border-radius: 13px;
   }
   nav{
-    background: #2D0A31;
+    background-image: url('../img/nav.png'); /* Adjust the path as necessary */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+    /* background: #2D0A31; */
+  }
+  .herooo{
+    background-color: #4c1e51;
+
   }
   .why p{
     font-size: 18px;
@@ -78,3 +89,18 @@
     color: #ffffff;
     border-radius: 5px;
   }
+  footer{
+    /* background: #2D0A31; */
+    border-radius: 20px;
+    background-image: url('../img/footer.png'); /* Adjust the path as necessary */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+  .footer-logo {
+    width: 110px; /* Adjust size as needed */
+    height: auto;
+  }
+  

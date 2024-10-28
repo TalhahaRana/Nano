@@ -20,7 +20,7 @@ function Products() {
   ];
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 p-5">
       <h1>Products</h1>
       <div className="row">
         {products.map(product => (

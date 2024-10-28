@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Products from './components/Products';
 import ProductDetail from './components/ProductDetail';
@@ -11,7 +12,7 @@ import About from './components/About';
 
 function App() {
   return (
-    <div>
+    <div className='mainn'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +23,7 @@ function App() {
         <Route path="/confirm-order" element={<ConfirmOrder />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
