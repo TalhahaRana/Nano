@@ -12,9 +12,6 @@ function Navbar() {
         <div className="navbar-nav ms-auto">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
               <Link className="nav-link text-white" to="/products">Products</Link>
             </li>
             <li className="nav-item">
