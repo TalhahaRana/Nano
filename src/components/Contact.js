@@ -8,7 +8,7 @@ function Contact() {
       <h1 className="text-center pt-4 text-white">Contact Us</h1>
       </div>
       
-      <div className="card shadow-sm">
+      <div className="card shadow-sm contact">
         <div className="card-body">
           <h5 className="card-title">Get in Touch</h5>
           <p className="card-text">We'd love to hear from you! Please fill out the form below and we’ll get back to you shortly.</p>

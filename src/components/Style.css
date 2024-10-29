@@ -24,7 +24,7 @@
     background-image: url('../img/image.png');
     background-position: right;
   } */
-   .mainn{
+   .main{
     background: #000000c7;
    }
   .bg-ex{
@@ -56,6 +56,9 @@
   }
   .why{
     border-radius: 13px;
+  }
+  .contact{
+    margin: 30px 290px;
   }
   nav{
     background-image: url('../img/nav.png'); /* Adjust the path as necessary */

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import "./Style.css";
 
 function Home() {
@@ -23,107 +24,159 @@ function Home() {
             </div>
             <div className="col-6" data-aos="fade-left">
               <p className="lead text-white">
-                Discover the power of NanoDrier High-Performance Ink Drier — a game-changing formula that accelerates drying rates and optimizes your printing process.
+                Discover the power of NanoDrier High-Performance Ink Drier — a
+                game-changing formula that accelerates drying rates and
+                optimizes your printing process.
               </p>
             </div>
           </div>
         </div>
       </div>
-      
+
       {/* Featured Product Section */}
       <div className="text-center my-5" data-aos="zoom-in">
         <h1 className="mb-4 text-white">Featured Product</h1>
         <div className="card mx-auto" style={{ width: "18rem" }}>
-          <img src="https://via.placeholder.com/150" className="card-img-top" alt="Product 1" />
+          <img
+            src="https://via.placeholder.com/150"
+            className="card-img-top"
+            alt="Product 1"
+          />
           <div className="card-body">
             <h5 className="card-title">NanoDrier Ink Drier</h5>
             <p className="card-text">
-              NanoDrier Ink Drier is a revolutionary product that enhances the drying speed of inks. Perfect for industrial printers.
+              NanoDrier Ink Drier is a revolutionary product that enhances the
+              drying speed of inks. Perfect for industrial printers.
             </p>
-            <button className="btn btn-primary">Buy Now</button>
+            <Link to="/products">
+              <button className="btn btn-primary">Buy Now</button>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Additional Content Sections with Animations */}
       <div className="container mt-5 text-white">
-    <h2 className="text-center bg-ex" data-aos="fade-up">HOW CAN NanoDrier BENEFIT YOU?</h2>
-    <h3 className="text-center" data-aos="fade-down">What’s your paper type?</h3>
-    <p className="text-center" data-aos="fade-up">
-        NanoDrier is versatile and suitable for a wide range of substrates. As we say, “Give us your toughest job, and we’ll make it right!”
-    </p>
+        <h2 className="text-center bg-ex" data-aos="fade-up">
+          HOW CAN NanoDrier BENEFIT YOU?
+        </h2>
+        <h3 className="text-center" data-aos="fade-down">
+          What’s your paper type?
+        </h3>
+        <p className="text-center" data-aos="fade-up">
+          NanoDrier is versatile and suitable for a wide range of substrates. As
+          we say, “Give us your toughest job, and we’ll make it right!”
+        </p>
 
-    <div className="row justify-content-around mt-2 text-white">
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+        <div className="row justify-content-around mt-2 text-white">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Felt Stock</h4>
-            <p>For excellent coverage, ink needs to settle into the paper’s crevices. However, more ink can mean extended drying. NanoDrier solves this by supporting thicker ink layers with no extra drying time required.</p>
-        </div>
+            <p>
+              For excellent coverage, ink needs to settle into the paper’s
+              crevices. However, more ink can mean extended drying. NanoDrier
+              solves this by supporting thicker ink layers with no extra drying
+              time required.
+            </p>
+          </div>
 
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Gloss Coated Stock</h4>
-            <p>This smooth paper enables faster drying of ink. NanoDrier enhances scratch and rub resistance for even better durability.</p>
+            <p>
+              This smooth paper enables faster drying of ink. NanoDrier enhances
+              scratch and rub resistance for even better durability.
+            </p>
+          </div>
         </div>
-    </div>
 
-    <div className="row justify-content-around mt-2">
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+        <div className="row justify-content-around mt-2">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Matte Coated Stock</h4>
-            <p>This acidic, matte-finish paper makes ink drying challenging due to low pH levels. NanoDrier binds the ink to its carrier, reducing chalking and significantly shortening drying times.</p>
-        </div>
+            <p>
+              This acidic, matte-finish paper makes ink drying challenging due
+              to low pH levels. NanoDrier binds the ink to its carrier, reducing
+              chalking and significantly shortening drying times.
+            </p>
+          </div>
 
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Synthetic Substrates</h4>
-            <p>Known for its printing challenges (like Reflex Blue on Yupo), NanoDrier boosts rub resistance, adhesion, and set times without the need for expensive UV or EB inks and systems.</p>
+            <p>
+              Known for its printing challenges (like Reflex Blue on Yupo),
+              NanoDrier boosts rub resistance, adhesion, and set times without
+              the need for expensive UV or EB inks and systems.
+            </p>
+          </div>
         </div>
-    </div>
 
-    <div className="row justify-content-around mt-2">
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+        <div className="row justify-content-around mt-2">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Uncoated Substrates</h4>
-            <p>Acidic stocks rapidly absorb ink, bypassing pigment binding. NanoDrier ensures full ink adhesion by bonding the pigment to the carrier for complete drying.</p>
-        </div>
+            <p>
+              Acidic stocks rapidly absorb ink, bypassing pigment binding.
+              NanoDrier ensures full ink adhesion by bonding the pigment to the
+              carrier for complete drying.
+            </p>
+          </div>
 
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Label Stocks</h4>
-            <p>Label stocks have slow ink absorption and lengthy drying times. With NanoDrier, you can use regular inks without the need for downtime or UV/EB systems.</p>
+            <p>
+              Label stocks have slow ink absorption and lengthy drying times.
+              With NanoDrier, you can use regular inks without the need for
+              downtime or UV/EB systems.
+            </p>
+          </div>
         </div>
-    </div>
 
-    <div className="row justify-content-around mt-2">
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+        <div className="row justify-content-around mt-2">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Carton/Board Stock</h4>
-            <p>The ink’s vehicle quickly absorbs, leaving pigment on the surface and leading to chalking. NanoDrier prevents this, ensuring a smooth finish.</p>
-        </div>
+            <p>
+              The ink’s vehicle quickly absorbs, leaving pigment on the surface
+              and leading to chalking. NanoDrier prevents this, ensuring a
+              smooth finish.
+            </p>
+          </div>
 
-        <div className="col-md-5 con mt-2" data-aos="fade-up">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
             <h4>Foil Stamping (Laser & Thermal Safe)</h4>
-            <p>Without proper curing, ink can be too soft for foil release. NanoDrier cures the ink thoroughly, creating a solid base that securely holds the foil.</p>
+            <p>
+              Without proper curing, ink can be too soft for foil release.
+              NanoDrier cures the ink thoroughly, creating a solid base that
+              securely holds the foil.
+            </p>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-      
-<div className="container herooo mt-5 why">
-    <div className="row justify-content-center p-5 " data-aos="fade-up">
-        <h2 className="card-title text-center mb-2">Why Choose NanoDrier?</h2>
-        <p className="card-text text-justify text-white">
-            NanoDrier’s Advanced Ink Drier is a groundbreaking solution designed to speed up ink drying by boosting cross-linking reactions far more efficiently than traditional driers. The secret to our proprietary formula lies in cutting-edge chemistry that enhances catalyst solubility within the ink.
-        </p>
-        <p className="card-text text-white">
+      <div className="container herooo mt-5 why">
+        <div className="row justify-content-center p-5 " data-aos="fade-up">
+          <h2 className="card-title text-center mb-2">Why Choose NanoDrier?</h2>
+          <p className="card-text text-justify text-white">
+            NanoDrier’s Advanced Ink Drier is a groundbreaking solution designed
+            to speed up ink drying by boosting cross-linking reactions far more
+            efficiently than traditional driers. The secret to our proprietary
+            formula lies in cutting-edge chemistry that enhances catalyst
+            solubility within the ink.
+          </p>
+          <p className="card-text text-white">
             This improvement in solubility provides two key benefits:
-        </p>
-        <p className="card-text text-white">
-            Catalysts are evenly distributed, positioned closer to where cross-linking begins.
-        </p>
-        <p className="card-text text-white">
-            Higher drier concentration is possible without causing phase separation.
-        </p>
-        <p className="card-text mt-4 text-white">
-            With NanoDrier, you can print on a range of substrates without depending on specialized UV or EB inks, simplifying your workflow for quicker, more efficient printing processes.
-        </p>
-    </div>
-</div>
-
+          </p>
+          <p className="card-text text-white">
+            Catalysts are evenly distributed, positioned closer to where
+            cross-linking begins.
+          </p>
+          <p className="card-text text-white">
+            Higher drier concentration is possible without causing phase
+            separation.
+          </p>
+          <p className="card-text mt-4 text-white">
+            With NanoDrier, you can print on a range of substrates without
+            depending on specialized UV or EB inks, simplifying your workflow
+            for quicker, more efficient printing processes.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

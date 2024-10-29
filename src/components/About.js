@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="body">
       <div className='heroo'>
-        <div className='content pt-5'>
+        <div className='content'>
       <h1 className="text-center mb-4 text-white">About Us</h1>
       <p className="mb-0 text-center text-white">“OUNCES OF SPEEDYDRY (PREVENTION) ARE WORTH POUNDS OF DOLLARS (CURES)”</p>
         </div>
