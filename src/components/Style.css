@@ -57,9 +57,9 @@
   .why{
     border-radius: 13px;
   }
-  .contact{
+  /* .contact{
     margin: 30px 290px;
-  }
+  } */
   nav{
     background-image: url('../img/nav.png'); /* Adjust the path as necessary */
   background-size: cover;
