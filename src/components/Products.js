@@ -5,7 +5,7 @@ function Products() {
   const products = [
     {
       id: 1,
-      name: 'SpeedyDry Ink Drier',
+      name: 'NanoDrier Ink Drier',
       price: 49.99,
       description: 'High-performance ink drier',
       image: 'https://via.placeholder.com/150',

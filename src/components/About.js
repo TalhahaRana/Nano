@@ -5,7 +5,7 @@ import "./About.css"; // Custom CSS for additional styles
 function About() {
   return (
     <div className="body">
-      <div className="heroo">
+      <div className="heroo ">
         <div className="content">
           <h1 className="text-center mb-4 text-white">About Us</h1>
           <p className="mb-0 text-center text-white">
@@ -14,12 +14,12 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="card my-4">
+      <div className="card my-4 container">
         <div className="card-body">
           <h5 className="card-title">Who We Are</h5>
           <p className="card-text">
             We make one product line, and simply put – we do it better than
-            anyone else. SpeedyDry is the result of one goal: making the press
+            anyone else. NanoDrier is the result of one goal: making the press
             room easier. As a result, we got our fast ink dry cure. No frills,
             no fancy terms, just trying to make your life easier and make you
             money along the way. We wish we could make the product cheaper; it
@@ -34,7 +34,7 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="card my-4">
+      <div className="card my-4 container">
         <div className="card-body">
           <h5 className="card-title">Our Promise</h5>
           <p className="card-text">
@@ -44,18 +44,18 @@ function About() {
             been constantly revised throughout its lifetime to continuously
             improve upon the base formulation. It is expensive, but that old
             saying “you get what you pay for” rings especially true when it
-            comes to SpeedyDry. It more than pays for itself – it makes you
+            comes to NanoDrier. It more than pays for itself – it makes you
             money and saves you time.
           </p>
         </div>
       </div>
-      <div className="card my-4">
+      <div className="card my-4 container">
         <div className="card-body">
           <h5 className="card-title">Why Choose Us?</h5>
           <p className="card-text">
-            That’s why we created SpeedyDry, a fast ink dry cure for your ink.
-            Do you need a fast ink dry cure? Get your gallon of SpeedyDry on our
-            webshop. Do you want to know how to use SpeedyDry? Click here.
+            That’s why we created NanoDrier, a fast ink dry cure for your ink.
+            Do you need a fast ink dry cure? Get your gallon of NanoDrier on our
+            webshop. Do you want to know how to use NanoDrier? Click here.
           </p>
         </div>
       </div>
