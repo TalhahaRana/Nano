@@ -29,12 +29,12 @@ function Home() {
         {/* Hero Section */}
         <div className="container he">
           <div className="row justify-content-center item-center">
-            <div className="col-md-6 col-sm-12" data-aos="fade-right">
+            <div className="col-md-6 col-sm-12" data-aos="fade-up">
               <h1 className="display-4 text-primary gradient-text">
                 Welcome to the World of Stress-Free Printing!
               </h1>
             </div>
-            <div className="col-md-6 col-sm-12" data-aos="fade-left">
+            <div className="col-md-6 col-sm-12" data-aos="fade-up">
               <p className="lead text-white">
                 Discover the power of NanoDrier High-Performance Ink Drier — a
                 game-changing formula that accelerates drying rates and
