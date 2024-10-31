@@ -106,4 +106,7 @@
     width: 110px; /* Adjust size as needed */
     height: auto;
   }
-  
+  .about p{
+    font-weight: 700;
+    font-size: 17px;
+  }

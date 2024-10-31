@@ -1,4 +1,6 @@
 import React from 'react';
+import proA from "../img/product/proA.png";
+
 import { Link } from 'react-router-dom';
 
 function Products() {
@@ -8,7 +10,7 @@ function Products() {
       name: 'NanoDrier Ink Drier',
       price: 49.99,
       description: 'High-performance ink drier',
-      image: 'https://via.placeholder.com/150',
+      image: [proA],
     },
     {
       id: 2,

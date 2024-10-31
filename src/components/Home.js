@@ -4,8 +4,17 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import "./Style.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileAlt, faPaintBrush, faPalette, faClipboard, faTag, faBox, faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFileAlt,
+  faPaintBrush,
+  faPalette,
+  faClipboard,
+  faTag,
+  faBox,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
+import proA from "../img/product/proA.png";
 
 
 function Home() {
@@ -41,7 +50,7 @@ function Home() {
         <h1 className="mb-4 text-white">Featured Product</h1>
         <div className="card mx-auto" style={{ width: "18rem" }}>
           <img
-            src="https://via.placeholder.com/150"
+            src={proA}
             className="card-img-top"
             alt="Product 1"
           />
@@ -70,86 +79,145 @@ function Home() {
           NanoDrier is versatile and suitable for a wide range of substrates. As
           we say, “Give us your toughest job, and we’ll make it right!”
         </p>
-
+        <div className="about">
         <div className="row justify-content-around mt-2 text-white">
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faFileAlt} className="me-2" style={{ color: '#ff5733' }} /> Felt Stock
-        </h4>
-        <p>
-          For excellent coverage, ink needs to settle into the paper’s crevices. However, more ink can mean extended drying. NanoDrier solves this by supporting thicker ink layers with no extra drying time required.
-        </p>
-      </div>
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                className="me-2"
+                style={{ color: "#ff5733" }}
+              />{" "}
+              Felt Stock
+            </h4>
+            <p>
+              For excellent coverage, ink needs to settle into the paper’s
+              crevices. However, more ink can mean extended drying. NanoDrier
+              solves this by supporting thicker ink layers with no extra drying
+              time required.
+            </p>
+          </div>
 
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faPaintBrush} className="me-2" style={{ color: '#33aaff' }} /> Gloss Coated Stock
-        </h4>
-        <p>
-          This smooth paper enables faster drying of ink. NanoDrier enhances scratch and rub resistance for even better durability.
-        </p>
-      </div>
-    </div>
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faPaintBrush}
+                className="me-2"
+                style={{ color: "#33aaff" }}
+              />{" "}
+              Gloss Coated Stock
+            </h4>
+            <p>
+              This smooth paper enables faster drying of ink. NanoDrier enhances
+              scratch and rub resistance for even better durability.
+            </p>
+          </div>
+        </div>
 
-    <div className="row justify-content-around mt-2">
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faPalette} className="me-2" style={{ color: '#ffaa33' }} /> Matte Coated Stock
-        </h4>
-        <p>
-          This acidic, matte-finish paper makes ink drying challenging due to low pH levels. NanoDrier binds the ink to its carrier, reducing chalking and significantly shortening drying times.
-        </p>
-      </div>
+        <div className="row justify-content-around mt-2">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faPalette}
+                className="me-2"
+                style={{ color: "#ffaa33" }}
+              />{" "}
+              Matte Coated Stock
+            </h4>
+            <p>
+              This acidic, matte-finish paper makes ink drying challenging due
+              to low pH levels. NanoDrier binds the ink to its carrier, reducing
+              chalking and significantly shortening drying times.
+            </p>
+          </div>
 
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faClipboard} className="me-2" style={{ color: '#ff33aa' }} /> Synthetic Substrates
-        </h4>
-        <p>
-          Known for its printing challenges (like Reflex Blue on Yupo), NanoDrier boosts rub resistance, adhesion, and set times without the need for expensive UV or EB inks and systems.
-        </p>
-      </div>
-    </div>
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faClipboard}
+                className="me-2"
+                style={{ color: "#ff33aa" }}
+              />{" "}
+              Synthetic Substrates
+            </h4>
+            <p>
+              Known for its printing challenges (like Reflex Blue on Yupo),
+              NanoDrier boosts rub resistance, adhesion, and set times without
+              the need for expensive UV or EB inks and systems.
+            </p>
+          </div>
+        </div>
 
-    <div className="row justify-content-around mt-2">
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faTag} className="me-2" style={{ color: '#33ffaa' }} /> Uncoated Substrates
-        </h4>
-        <p>
-          Acidic stocks rapidly absorb ink, bypassing pigment binding. NanoDrier ensures full ink adhesion by bonding the pigment to the carrier for complete drying.
-        </p>
-      </div>
+        <div className="row justify-content-around mt-2">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faTag}
+                className="me-2"
+                style={{ color: "#33ffaa" }}
+              />{" "}
+              Uncoated Substrates
+            </h4>
+            <p>
+              Acidic stocks rapidly absorb ink, bypassing pigment binding.
+              NanoDrier ensures full ink adhesion by bonding the pigment to the
+              carrier for complete drying.
+            </p>
+          </div>
 
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faBox} className="me-2" style={{ color: '#aaff33' }} /> Label Stocks
-        </h4>
-        <p>
-          Label stocks have slow ink absorption and lengthy drying times. With NanoDrier, you can use regular inks without the need for downtime or UV/EB systems.
-        </p>
-      </div>
-    </div>
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faBox}
+                className="me-2"
+                style={{ color: "#aaff33" }}
+              />{" "}
+              Label Stocks
+            </h4>
+            <p>
+              Label stocks have slow ink absorption and lengthy drying times.
+              With NanoDrier, you can use regular inks without the need for
+              downtime or UV/EB systems.
+            </p>
+          </div>
+        </div>
 
-    <div className="row justify-content-around mt-2">
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faStar} className="me-2" style={{ color: '#aa33ff' }} /> Carton/Board Stock
-        </h4>
-        <p>
-          The ink’s vehicle quickly absorbs, leaving pigment on the surface and leading to chalking. NanoDrier prevents this, ensuring a smooth finish.
-        </p>
-      </div>
+        <div className="row justify-content-around mt-2">
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faStar}
+                className="me-2"
+                style={{ color: "#aa33ff" }}
+              />{" "}
+              Carton/Board Stock
+            </h4>
+            <p>
+              The ink’s vehicle quickly absorbs, leaving pigment on the surface
+              and leading to chalking. NanoDrier prevents this, ensuring a
+              smooth finish.
+            </p>
+          </div>
 
-      <div className="col-md-5 con mt-2" data-aos="fade-up">
-        <h4>
-          <FontAwesomeIcon icon={faStar} className="me-2" style={{ color: '#33ffaa' }} /> Foil Stamping (Laser & Thermal Safe)
-        </h4>
-        <p>
-          Without proper curing, ink can be too soft for foil release. NanoDrier cures the ink thoroughly, creating a solid base that securely holds the foil.
-        </p>
-      </div>
-    </div>
+          <div className="col-md-5 con mt-2" data-aos="fade-up">
+            <h4>
+              <FontAwesomeIcon
+                icon={faStar}
+                className="me-2"
+                style={{ color: "#33ffaa" }}
+              />{" "}
+              Foil Stamping (Laser & Thermal Safe)
+            </h4>
+            <p>
+              Without proper curing, ink can be too soft for foil release.
+              NanoDrier cures the ink thoroughly, creating a solid base that
+              securely holds the foil.
+            </p>
+          </div>
+        </div>
+        </div>
+
+
       </div>
 
       <div className="container herooo mt-5 why">
