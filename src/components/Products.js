@@ -1,24 +1,26 @@
 import React from 'react';
-import proA from "../img/product/proA.png";
-
 import { Link } from 'react-router-dom';
+import { Carousel } from 'react-bootstrap'; // Import Carousel
+import proA from "../img/product/proA.png";
+import proB from "../img/product/proB.png";
+import proC from "../img/product/proC.png";
 
 function Products() {
   const products = [
     {
       id: 1,
-      name: 'NanoDrier Ink Drier',
+      name: 'NanoDrier-offset',
       price: 49.99,
       description: 'High-performance ink drier',
-      image: [proA],
+      images: [proA, proB, proC],
     },
     {
       id: 2,
       name: 'UV Ink Drier',
       price: 59.99,
       description: 'Top-quality UV ink drier',
-      image: 'https://via.placeholder.com/150',
-    }
+      images: ['https://via.placeholder.com/150', 'https://via.placeholder.com/300'],
+    },
   ];
 
   return (
@@ -28,8 +30,18 @@ function Products() {
         {products.map(product => (
           <div className="col-md-4" key={product.id}>
             <div className="card mb-4">
-              <Link to={`/products/${product.id}`}>
-                <img src={product.image} className="card-img-top" alt={product.name} />
+              <Link to={`/products/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Carousel>
+                  {product.images.map((img, index) => (
+                    <Carousel.Item key={index}>
+                      <img
+                        src={img}
+                        className="d-block w-100"
+                        alt={`${product.name} slide ${index + 1}`}
+                      />
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
                 <div className="card-body">
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">${product.price}</p>

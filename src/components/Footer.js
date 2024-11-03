@@ -12,7 +12,7 @@ const Footer = () => {
         {/* Logo Section */}
         <Row className="justify-content-center mb-4">
           <Col md={2} className="text-center">
-            <img src={logo} alt="Logo" className="footer-logo" />
+            <img src={logo} width="130" alt="Logo" className="footer-logo" />
           </Col>
         </Row>
 

@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar navbar-expand px-3">
       <div className="container-fluid d-grid justify-content-center">
         <Link className="navbar-brand justify-content-center d-flex" to="/">
-          <img src={logo} alt="logo" width="130" className="d-inline-block align-text-top" />
+          <img src={logo} alt="logo" width="160" className="d-inline-block align-text-top" />
         </Link>
         <div className="navbar-nav ms-auto">
           <ul className="navbar-nav ms-auto">

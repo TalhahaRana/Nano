@@ -14,7 +14,10 @@ import {
   faBox,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
+import { Carousel } from "react-bootstrap";
 import proA from "../img/product/proA.png";
+import proB from "../img/product/proB.png"; // Example images
+import proC from "../img/product/proC.png";
 
 
 function Home() {
@@ -49,16 +52,21 @@ function Home() {
       <div className="text-center my-5" data-aos="zoom-in">
         <h1 className="mb-4 text-white">Featured Product</h1>
         <div className="card mx-auto" style={{ width: "18rem" }}>
-          <img
-            src={proA}
-            className="card-img-top"
-            alt="Product 1"
-          />
+          <Carousel>
+            <Carousel.Item>
+              <img className="d-block w-100" src={proA} alt="First product image" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block w-100" src={proB} alt="Second product image" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block w-100" src={proC} alt="Third product image" />
+            </Carousel.Item>
+          </Carousel>
           <div className="card-body">
-            <h5 className="card-title">NanoDrier Ink Drier</h5>
+            <h5 className="card-title">NanoDrier-offset</h5>
             <p className="card-text">
-              NanoDrier Ink Drier is a revolutionary product that enhances the
-              drying speed of inks. Perfect for industrial printers.
+              NanoDrier Ink Drier is a revolutionary product that enhances the drying speed of inks. Perfect for industrial printers.
             </p>
             <Link to="/products">
               <button className="btn btn-primary">Buy Now</button>
