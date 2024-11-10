@@ -20,6 +20,9 @@
     color: #343a40; /* Dark color for the header */
   }
   .heroo{
-    background-color: #4c1e51;
+    /* background-color: #4c1e51; */
+    --angle: 45deg; 
+ background: linear-gradient(var(--angle), oklab(20.9% 0.034 -0.061), oklab(23.8% 0.064 -0.046), oklab(23.4% 0.065 -0.015));
     padding: 60px;
   }
+  

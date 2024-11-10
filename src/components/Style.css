@@ -25,8 +25,11 @@
     background-position: right;
   } */
    .main{
-    background: #000000c7;
-   }
+    /* background: #000000c7; */
+background: #222222
+
+;
+  }
   .bg-ex{
     padding: 29px;
     background: #4c1e5173;
@@ -41,11 +44,9 @@
   .he{
     padding-top: 30vh; }
   .btn{
-    background: #a077ff;
-    background: -moz-linear-gradient(top, #a077ff 0%, #ef67ff 100%);
-    background: -webkit-linear-gradient(top, #a077ff 0%, #ef67ff 100%);
-    background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
-    border: 1px solid #F067FF;
+    --angle: 45deg; 
+    background: linear-gradient(var(--angle), oklab(20.9% 0.034 -0.061), oklab(23.8% 0.064 -0.046), oklab(23.4% 0.065 -0.015));
+   
     border-radius: 30px;
     width: 225px;
   }
@@ -70,8 +71,10 @@
     /* background: #2D0A31; */
   }
   .herooo{
-    background-color: #4c1e51;
-
+    /* background-color: #4c1e51; */
+    --angle: 45deg; 
+    background: linear-gradient(var(--angle), oklab(20.9% 0.034 -0.061), oklab(23.8% 0.064 -0.046), oklab(23.4% 0.065 -0.015));
+   
   }
   .why p{
     font-size: 18px;
