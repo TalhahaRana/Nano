@@ -27,7 +27,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="main">
+    <div className="main pb-5">
       <div className="hero">
         {/* Hero Section */}
         <div className="container he">

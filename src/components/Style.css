@@ -43,6 +43,11 @@ background: #222222
   }
   .he{
     padding-top: 30vh; }
+    @media (min-width: 430px){
+      .he{
+        padding-top: 20vh;
+      }
+    }
   .btn{
     --angle: 45deg; 
     background: linear-gradient(var(--angle), oklab(20.9% 0.034 -0.061), oklab(23.8% 0.064 -0.046), oklab(23.4% 0.065 -0.015));
